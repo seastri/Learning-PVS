@@ -1,0 +1,27 @@
+{
+ "phone_1.FindAdd": [
+  {
+   "info": {
+    "theory": "phone_1",
+    "formula": "FindAdd",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "d358d7612d9bcfcf1c6377e19fb7550e9c4bd30cebf846f7b2a65d238973378c"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "FindAdd",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(grind :theories (\"phone_1\"))",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ]
+}

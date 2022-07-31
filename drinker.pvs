@@ -1,0 +1,13 @@
+%%
+% @theory: drinker
+% @author: sam
+% @date: Sat, 30 Jul 2022 20:29:15 GMT
+%%
+drinker: THEORY
+  BEGIN 
+    P: TYPE
+    D: [P->bool]
+
+    paradox : LEMMA
+        EXISTS (x:P): (D(x) IMPLIES FORALL (y:P):D(y))
+  END drinker

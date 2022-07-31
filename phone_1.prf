@@ -1,0 +1,19 @@
+(phone_1
+ (n0_TCC1 0
+  (n0_TCC1-1 nil 3866143349 ("" (existence-tcc) nil nil) nil nil
+   (n0 existence "" "phone_1.P")))
+ (emptybook_TCC1 0
+  (emptybook_TCC1-1 nil 3866143349 ("" (existence-tcc) nil nil) nil nil
+   (emptybook existence "" "B")))
+ (FindPhone_TCC1 0
+  (FindPhone_TCC1-1 nil 3866143349 ("" (existence-tcc) nil nil) nil nil
+   (FindPhone existence "" "[[B, phone_1.N] -> phone_1.P]")))
+ (AddPhone_TCC1 0
+  (AddPhone_TCC1-1 nil 3866143349 ("" (existence-tcc) nil nil) nil nil
+   (AddPhone existence "" "[[B, phone_1.N, phone_1.P] -> B]")))
+ (FindAdd 0
+  (FindAdd-1 nil 3866143362 ("" (grind :theories ("phone_1")) nil nil)
+   ((Addax formula-decl nil phone_1 nil)
+    (Findax formula-decl nil phone_1 nil))
+   shostak)))
+

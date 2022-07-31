@@ -1,0 +1,16 @@
+%%
+% @theory: prop_logic
+% @author: sam
+% @date: Wed, 06 Jul 2022 00:42:10 GMT
+%%
+prop_logic: THEORY
+  BEGIN 
+    A, B, C, D: bool
+
+    ex1: LEMMA A IMPLIES (B OR A)
+
+    ex2: LEMMA (A AND (A IMPLIES B)) IMPLIES B
+
+    ex3: LEMMA ((A IMPLIES B) IMPLIES A) IMPLIES (B IMPLIES (B AND A))
+    
+  END prop_logic

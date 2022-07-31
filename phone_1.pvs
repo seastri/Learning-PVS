@@ -1,0 +1,28 @@
+%%
+% @theory: phone_1
+% @author: sam
+% @date: Wed, 06 Jul 2022 01:20:35 GMT
+%%
+phone_1: THEORY
+  BEGIN 
+    
+    N: TYPE     %names
+    P: TYPE     %phone numbers
+    B: TYPE = [N -> P]   %phone books
+
+    n0: P
+    emptybook: B
+    emptyax: AXIOM FORALL (nm: N): emptybook(nm) = n0
+
+    FindPhone: [B, N-> P]
+    Findax: AXIOM FORALL (bk:B), (nm: N): FindPhone(bk, nm) = bk(nm)
+
+    AddPhone: [B, N, P -> B]
+    Addax: AXIOM FORALL (bk: B), (nm: N), (pn: P): 
+        AddPhone(bk, nm, pn)=bk WITH [(nm) := pn]
+
+    % @QED FindAdd proved by sam on Thu, 07 Jul 2022 00:45:25 GMT
+    FindAdd: CONJECTURE FORALL (bk: B), (nm: N), (pn: P): 
+        FindPhone(AddPhone(bk, nm, pn), nm) = pn
+
+  END phone_1

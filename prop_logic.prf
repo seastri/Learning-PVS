@@ -1,0 +1,14 @@
+(prop_logic
+ (ex1 0 (ex1-1 nil 3866057201 ("" (flatten) nil nil) nil shostak))
+ (ex2 0
+  (ex2-1 nil 3866057284
+   ("" (flatten)
+    (("" (split) (("1" (propax) nil nil) ("2" (propax) nil nil)) nil))
+    nil)
+   nil shostak))
+ (ex3 0
+  (ex3-1 nil 3866058009
+   ("" (flatten)
+    (("" (split) (("1" (prop) nil nil) ("2" (prop) nil nil)) nil)) nil)
+   nil shostak)))
+

@@ -1,0 +1,19 @@
+%%
+% @theory: group
+% @author: sam
+% @date: Thu, 07 Jul 2022 01:09:51 GMT
+%%
+group: THEORY
+  BEGIN 
+    G: TYPE+
+    e: G
+    i: [G -> G]
+    *: [G,G -> G]
+    x,y,z : VAR G
+    associative : AXIOM
+        (x * y) * z = x * (y * z)
+    id_left : AXIOM
+        i(x) * x = e
+    inverse_associative : THEOREM
+        i(x) * (x*y) = y
+  END group
